@@ -1,0 +1,8 @@
+关于Linux的学习：
+  1.network
+    1.1网络配置
+      1.1.1 setup方式
+            setup是一个常用的工具，可以设置ip、防火墙、DNS等等。使用setup设置注意在设置完成以后，网卡信息会配置到/etc/sysconfig/network-scripts/ifcfg-eth0文件中
+            里，需要更改BOOTPROTO和ONBOOT为yes,不然通过service network restart 重启后，新配置的网卡不会跟着重启
+      1.1.2 命令行方式
+            
